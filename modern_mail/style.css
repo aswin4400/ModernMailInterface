@@ -1,0 +1,680 @@
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu Regular'), local('Ubuntu-Regular'),
+       url('../fonts/ubuntu-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/ubuntu-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  box-shadow: -10px 10px 21px -1px rgba(0, 0, 0, 0.37);
+  border-radius: 20px 20px 20px 20px;
+}
+.one {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #f6f6fa;
+  border-radius: 20px 0px 0px 20px;
+}
+
+.one .profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 30px 30px 30px 30px;
+}
+
+.one .profile img {
+  height: 45px;
+  width: 45px;
+  border-radius: 50px;
+}
+
+.one .profile .name-account {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 7px;
+  margin-left: 15px;
+}
+
+.one .profile .name-account .name {
+  font-weight: 600;
+  font-family: 'Ubuntu';
+  color: #636467;
+}
+
+.one .profile .name-account .account {
+  font-weight: 350;
+  font-size: 1.8ch;
+  font-family: 'Ubuntu';
+  color: #aaadb1;
+}
+
+.one .tabs {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 30px 30px 30px 30px;
+}
+
+.one .tabs .inner-tab {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.one .tabs .inner-tab img {
+  height: 20px;
+  width: 20px;
+}
+
+.one .tabs .inner-tab .text {
+  font-family: 'Ubuntu';
+  font-size: 2ch;
+  font-weight: 550;
+  color: #643cd4;
+  margin-left: 10px;
+  margin-bottom: 15px;
+}
+
+.one .tabs .inner-tab .number {
+  font-family: 'Ubuntu';
+  font-size: 2ch;
+  font-weight: 550;
+  color: #643cd4;
+  margin-left: 75px;
+}
+
+.one .tabs .inner-tab .not-active {
+  color: #aaadb1;
+}
+.one .tabs .inner-tab .reminder {
+  margin-left: 50px;
+}
+.one .tabs .inner-tab .works {
+  margin-left: 30px;
+}
+
+.one .bold-tab {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.one .bold-tab .text {
+  font-family: 'Ubuntu';
+  font-size: 2ch;
+  font-weight: 550;
+  color: #000000;
+}
+
+.one .bold-tabs {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.one .bold-tabs .bold-tab img {
+  height: 20px;
+  width: 20px;
+  margin-left: 100px;
+}
+
+.one .line {
+  border-bottom: 1px solid #aaadb1;
+  height: auto;
+  margin-top: 15px;
+}
+
+.one .tags {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 40px;
+  margin-right: 30px;
+  margin-top: 15px;
+}
+
+.one .tags .tag {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+
+.one .tags .tag .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  margin-top: 5px;
+}
+.one .tags .tag .client {
+  background-color: red;
+}
+
+.one .tags .tag .work {
+  background-color: blue;
+}
+
+.one .tags .tag .family {
+  background-color: green;
+}
+
+.one .tags .tag .friends {
+  background-color: yellow;
+}
+
+.one .tags .tag .text {
+  font-family: 'Ubuntu';
+  font-size: 2ch;
+  font-weight: 550;
+  color: #aaadb1;
+  margin-left: 10px;
+  margin-bottom: 15px;
+}
+
+.two {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  background-color: #eceff7;
+  box-shadow: 10px 0px 5px -10px rgba(0, 0, 0, 0.37) inset;
+  padding-top: 35px;
+}
+
+.two .search-filter-outer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.two .search-filter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.two .search-filter input {
+  border-radius: 5px;
+  height: 33px;
+  width: 200px;
+  background-color: #ffffff;
+  border: none;
+  text-align: center;
+  font-size: 2ch;
+  margin-right: 30px;
+}
+
+.two .search-filter img {
+  height: 33px;
+  width: 33px;
+  margin-left: 33px;
+}
+
+.two .search-filter-outer .line {
+  border-bottom: 1px solid #e1e5f0;
+  height: auto;
+  margin-top: 35px;
+}
+.two .inbox-items-outer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.two .open {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.two .inbox-items-outer .line {
+  border-bottom: 1px solid #e1e5f0;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.two .inbox-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-top: 25px;
+}
+
+.two .inbox-items .dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50px;
+  background-color: green;
+  margin-left: 10px;
+  margin-right: 15px;
+  margin-top: 5px;
+}
+
+.two .inbox-items .name-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 200px;
+  min-width: 200px;
+}
+
+.two .inbox-items .not-online {
+  margin-left: 35px;
+}
+
+.two .inbox-items .name-message .name {
+  font-weight: 600;
+  font-family: 'Ubuntu';
+  color: black;
+  font-size: 2ch;
+}
+
+.two .inbox-items .name-message .name-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.two .inbox-items .name-message .new .text {
+  font-size: 1.4ch;
+  color: blue;
+  font-family: 'Ubuntu';
+  font-weight: 600;
+  margin-top: 3px;
+  margin-left: 5px;
+}
+
+.two .inbox-items .name-message .name-icon img {
+  width: 15px;
+  height: 15px;
+  margin-left: 10px;
+  margin-top: 1px;
+}
+
+.two .inbox-items .name-message .subject {
+  font-weight: 400;
+  font-family: 'Ubuntu';
+  color: #555761;
+  font-size: 1.8ch;
+  margin-top: 15px;
+}
+
+.two .inbox-items .name-message .message {
+  font-weight: 400;
+  font-family: 'Ubuntu';
+  color: #747682;
+  font-size: 1.8ch;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  min-width: 250px;
+  max-width: 250px;
+  min-height: 40px;
+}
+
+.two .inbox-items .time {
+  font-weight: 400;
+  font-family: 'Ubuntu';
+  color: #747682;
+  font-size: 1.7ch;
+  margin-right: 10px;
+  margin-left: 50px;
+}
+
+.two .opened {
+  background-color: white;
+  box-shadow: 10px 10px 5px -10px rgba(0, 0, 0, 0.37) inset;
+}
+
+.two .inbox-items .name-message .files {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.two .opened .name-message {
+  margin-left: 45px;
+}
+
+.two .inbox-items .name-message .files .file {
+  padding: 8px 8px 8px 8px;
+  font-weight: 400;
+  font-family: 'Ubuntu';
+  color: #747682;
+  font-size: 1.7ch;
+  background-color: #fbe4cd;
+  margin-right: 20px;
+  border-radius: 10px;
+  max-height: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.two .inbox-items .name-message .files .template {
+  color: #643cd4;
+}
+
+.two .inbox-items .name-message .files .description {
+  color: orangered;
+}
+
+.three {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.three .top {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 20px 10px 15px 10px;
+  box-shadow: 0px 10px 5px -10px rgba(0, 0, 0, 0.37);
+}
+
+.three .top > img {
+  width: 35px;
+  height: 25px;
+  margin-top: 20px;
+}
+
+.three .top .name-email-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-left: 35px;
+  margin-bottom: 10px;
+}
+
+.three .top .name-email-icon .name {
+  max-width: 300px;
+  color: #636467;
+  font-family: 'Ubuntu';
+  font-size: 4ch;
+  font-weight: 500;
+  letter-spacing: -1px;
+}
+
+.three .top .name-email-icon .email {
+  font-family: 'Ubuntu';
+  color: #636467;
+  max-width: 300px;
+  margin-top: 3px;
+  margin-left: 2px;
+}
+.three .top .name-email-icon img {
+  width: 20px;
+  height: 20px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.three .top .icon-set {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-left: 196px;
+  margin-top: 10px;
+}
+
+.three .top .icon-set img {
+  height: 15px;
+  width: 15px;
+  margin: 10px 10px 10px 10px;
+}
+.three .bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.three .bottom .subject {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.three .bottom .date-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 2px;
+  color: #aaadb1;
+  font-family: 'Ubuntu';
+  font-size: smaller;
+}
+
+.three .bottom .subject .subject-name {
+  font-family: 'Ubuntu';
+  color: #643cd4;
+  font-weight: 500;
+}
+
+.three .bottom .line {
+  border-top: 1px solid #d3d9e0;
+  width: auto;
+}
+
+.three .bottom .message-time-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 25px;
+}
+
+.three .bottom .message-time-container .message-container {
+  background-color: #f3f3f6;
+  min-width: 520px;
+  max-width: 520px;
+  border-radius: 20px;
+  font-family: 'Ubuntu';
+  font-size: 1.7ch;
+  padding: 25px;
+  line-height: 1.5;
+  color: #595c61;
+}
+
+.three .bottom .message-time-container .time-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.three .bottom .message-time-container .time-container .time {
+  font-family: 'Ubuntu';
+  font-size: smaller;
+  color: #595c61;
+}
+
+.three .bottom .dp-files {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+
+.three .bottom .dp-files > img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 7px;
+}
+
+.three .bottom .dp-files .file {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #f3f3f6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 15px;
+  max-width: 170px;
+  min-width: 170px;
+  margin-right: 25px;
+}
+
+.three .bottom .dp-files .file .type-icon {
+  font-family: 'Ubuntu';
+  max-width: 40px;
+  min-width: 40px;
+  max-height: 40px;
+  min-width: 40px;
+  background-color: #9238ff;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.three .bottom .dp-files .file .name-type {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.three .bottom .dp-files .file .name-type .name {
+  font-family: 'Ubuntu';
+  color: #595c61;
+  font-weight: 500;
+}
+
+.three .bottom .dp-files .file .name-type .type {
+  font-family: 'Ubuntu';
+  color: #595c61;
+  font-weight: light;
+  font-size: 1.7ch;
+  margin-bottom: 2px;
+}
+
+.three .bottom .dp-files .file img {
+  height: 25px;
+  width: 25px;
+  margin-top: 5px;
+}
+
+.three .bottom .message-time-container > img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  margin-left: 10px;
+  margin-right: 15px;
+  align-self: flex-end;
+}
+
+.three .bottom textarea {
+  border-bottom: none;
+  background-color: #ffffff;
+  min-width: 570px;
+  max-width: 520px;
+  max-height: 50px;
+  border-radius: 20px 20px 0px 0px;
+  font-family: 'Ubuntu';
+  font-size: 1.7ch;
+  padding: 25px;
+  line-height: 1.5;
+  color: #595c61;
+  margin-right: 50px;
+  border-color: #a6b0bf;
+  resize: none;
+}
+
+.three .bottom .textinput {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.three .bottom textarea:focus {
+  outline: none;
+}
+
+.three .bottom .textinput .symbols {
+  min-width: 568px;
+  max-width: 520px;
+  min-height: 40px;
+  background-color: white;
+  margin-right: 50px;
+  border: 1px solid #a6b0bf;
+  border-top: none;
+  border-radius: 0px 0px 20px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.three .bottom .textinput .symbols select {
+  border: none;
+  background: none;
+  color: blue;
+  font-family: 'Ubuntu';
+  font-weight: 1.5ch;
+  margin-bottom: 2px;
+}
+
+.three .bottom .textinput .symbols .subject {
+  font-family: 'Ubuntu';
+  font-size: 1.8ch;
+  line-height: 1.5;
+  color: #595c61;
+  margin-left: 25px;
+}
+.three .bottom .textinput .symbols select:focus {
+  outline: none;
+}
+.three .bottom .textinput .symbols select option {
+  font-family: 'Ubuntu';
+}
+
+.three .bottom .textinput .symbols .icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-left: 180px;
+}
+
+.three .bottom .textinput .symbols .icons img {
+  height: 25px;
+  width: 25px;
+  align-self: center;
+  margin: 10px;
+}
+
+.three .bottom .textinput .symbols .icons button {
+  background-color: #9238ff;
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
